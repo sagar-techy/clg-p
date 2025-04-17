@@ -13,16 +13,16 @@ const Upload = () => {
  }
 
  return (
-  <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-16 min-h-screen flex items-center justify-center">
+  <section className="bg-[#735557d1]  text-white py-16 min-h-screen flex items-center justify-center">
     <div className="container mx-auto px-4">
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="bg-gradient-to-r from-blue-500 to-purple-600 py-6">
+        <div className="bg-[#5f2509ca] py-6">
           <h2 className="text-3xl font-bold text-center text-white">Upload Activity</h2>
         </div>
-        <div className="p-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="p-6">
+          <form onSubmit={handleSubmit} className="space-y-6" >
             <div>
-              <label htmlFor="title" className="block text-gray-700 font-medium mb-2">Title</label>
+              <label htmlFor="title" className="block  text-gray-700 font-medium mb-2">Title</label>
               <input 
                 id="title"
                 type="text" 
@@ -88,7 +88,7 @@ const Upload = () => {
             
             <button 
               type="submit" 
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+              className="w-full bg-[#735557] text-xl text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
             >
               Submit Activity
             </button>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Dashboard = () => {
   return (
-    <section className="dashboard bg-gradient-to-r from-blue-500 to-purple-600 text-white py-16">
+    <section className="dashboard bg-[#735557d1] text-white py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-10">Your Performance Dashboard</h2>
         
@@ -61,7 +61,7 @@ const Dashboard = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <button className="bg-white text-blue-500 font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-blue-100 transition duration-300">
+          <button className=" bg-[#5f2509ca] font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-blue-100 transition duration-300">
             View Detailed Report
           </button>
         </div>

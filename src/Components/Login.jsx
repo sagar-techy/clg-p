@@ -15,10 +15,10 @@ const Login = () => {
  };
 
  return (
-  <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-16 min-h-screen flex items-center justify-center">
+  <section className="bg-[#735557d1] text-white py-16 min-h-screen flex items-center justify-center">
     <div className="container mx-auto px-4">
       <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="bg-gradient-to-r from-blue-500 to-purple-600 py-6">
+        <div className="bg-[#5f2509ca] py-6">
           <h2 className="text-3xl font-bold text-center text-white">Login / Sign Up</h2>
         </div>
         <div className="p-8">
@@ -61,7 +61,7 @@ const Login = () => {
             </div>
             <button 
               type="submit" 
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+              className="w-full bg-[#5f2509ca] text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-xl transition duration-300"
             >
               Login
             </button>

@@ -11,11 +11,11 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md py-4">
+    <header className="bg-pink-500 text-white shadow-md py-4">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <div className="text-2xl font-bold">Campus Connect</div>
+        <div className="text-[30px] font-bold">Campus Connect</div>
         <nav>
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-6 font-semibold text-lg">
             <li>
               <Link to="/" className="hover:text-gray-300 transition duration-300">
                 Home
@@ -38,13 +38,13 @@ const Header = () => {
             </li>
             <li>
               <Link to="/login" className="hover:text-gray-300 transition duration-300">
-                Login/Sign Up
+                Login
               </Link>
             </li>
             <li>
               <button
                 onClick={handleLogout}
-                className="bg-white text-blue-500 font-semibold py-1 px-3 rounded-full shadow hover:bg-blue-100 transition duration-300"
+                className="bg-red-500 text-white font-semibold py-1 px-3 rounded-full shadow "
               >
                 Logout
               </button>

@@ -44,7 +44,7 @@ const Home = () => {
 
   return (
     <>
-      <section 
+      <section
         style={{ backgroundImage: `url(${pe})` }}
         className="hero w-full bg-cover bg-bottom h-full text-[#444040] py-20"
       >
@@ -77,47 +77,47 @@ const Home = () => {
           <ul className="grid grid-cols-2 gap-9 text-lg font-semibold px-52 text-center">
             <Link
               to="/show"
-              className="bg-white p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl text-[#Af8F6F] hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
+              className="bg-white p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl text-[#Af8F6F] hover:bg-[#ebc59eb0] hover:border-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
             >
               Activity Showcasing
             </Link>
             <Link
               to="/performance"
-              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
+              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc59eb0] hover:border-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
             >
               Performance Evaluation
             </Link>
             <Link
               to="/indi"
-              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0]   rounded-lg hover:shadow-xl  hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
+              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0]   rounded-lg hover:shadow-xl  hover:bg-[#ebc59eb0] hover:border-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
             >
               Individual Performance Chart
             </Link>
             <Link
               to="/comp"
-              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
+              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc59eb0] hover:border-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
             >
               Comparative Analysis
             </Link>
             <Link
               to="/career"
-              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#938a8b] rounded-lg hover:shadow-xl  hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
+              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#938a8b] rounded-lg hover:shadow-xl  hover:bg-[#ebc59eb0] hover:border-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
             >
               Career Guidance
             </Link>
             <Link
               to="/game"
-              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
+              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc59eb0] hover:border-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
             >
               Gamification and Rewards
             </Link>
             <Link
               to="/comm"
-              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
+              className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc59eb0] hover:border-[#ebc49e] hover:text-white hover:font-bold transition duration-200"
             >
               Community Engagement
             </Link>
-            <Link className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200">
+            <Link className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc59eb0] hover:border-[#ebc49e] hover:text-white hover:font-bold transition duration-200">
               Personalized Recommendations
             </Link>
           </ul>

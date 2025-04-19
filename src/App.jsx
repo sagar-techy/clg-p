@@ -40,6 +40,7 @@ const App = () => {
         <Route path="/game" element={<Game />} />
         <Route path="/comm" element={<Comm />} />
         <Route path="/student/:id" element={<StudentDetails />} />
+        <Route path="/student/:id/activity" element={<Activity />} />
         <Route path="/colleges" element={<Colleges />} />
         <Route path="/college/:id" element={<CollegeDetail/>} />
         

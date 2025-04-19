@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import dummyStudents from "../data/dummyStudent"; // adjust path as needed
+
 
 const Login = () => {
  const [email, setEmail] = useState('');
@@ -9,14 +11,28 @@ const Login = () => {
   const dispatch = useDispatch();
   const  navigate = useNavigate()
 
- const handleSubmit = (event) => {
-   event.preventDefault();
-  // Mock login success
-  dispatch({ type: 'LOGIN', payload: { email } });
-   alert('Login successful! Welcome back.');
-   // Redirect to dashboard or home page
-    navigate('/dashboard');
- };
+ 
+   const handleSubmit = (e) => {
+     e.preventDefault();
+     dispatch({ type: "LOGIN", payload: { email } });
+
+     const emailName = email.split("@")[0].replace(/\./g, " ").toLowerCase();
+
+     const student = dummyStudents.find(
+       (s) => s.name.toLowerCase() === emailName
+     );
+
+
+     if (student) {
+       alert("Login successful!");
+       navigate(`/student/${student.id}`);
+     } else {
+       alert("Login successful! Enjoy Campus Connect!");
+       navigate("/");
+     }
+   };
+
+
 
  return (
    <section className="bg-[#F5F5F5] text-white py-16 min-h-screen flex items-center justify-center">

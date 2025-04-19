@@ -3,9 +3,9 @@ import React from "react";
 const dummyUploads = [
   {
     category: "Music",
-    type: "video",
+    type: "image",
     title: "Piano Recital",
-    url: "https://www.youtube.com/embed/f5YcI0QJGgA",
+    url: "https://img.lovepik.com/desgin_photo/45000/0409_detail.jpg!detail808",
   },
   {
     category: "Dance",
@@ -15,15 +15,15 @@ const dummyUploads = [
   },
   {
     category: "Creative Writing",
-    type: "document",
+    type: "image",
     title: "Short Story - The Wanderer",
-    url: "#",
+    url: "https://i.pinimg.com/originals/8f/64/20/8f6420a4423260b49cf1bdd0399849cf.jpg",
   },
   {
     category: "Painting",
     type: "image",
     title: "Sunset Canvas",
-    url: "https://via.placeholder.com/300x200",
+    url: "https://th.bing.com/th/id/OIP.3pXUJ0MOZMaJxkNg8zX9gQHaJO?w=146&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
   },
   {
     category: "Debating",
@@ -35,12 +35,12 @@ const dummyUploads = [
     category: "Acting",
     type: "image",
     title: "Stage Play Snapshot",
-    url: "https://via.placeholder.com/300x200",
+    url: "https://www.bing.com/th/id/OIP.8omEYl_karXtUam0MU_3tAHaLG?w=150&h=225&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.5&pid=3.1&rm=2",
   },
 ];
 
 const UploadCard = ({ upload }) => (
-  <div className="bg-white p-4 rounded-xl shadow-md w-full max-w-sm transition hover:scale-[1.02]">
+  <div className="bg-white p-4 rounded-xl shadow-md w-full max-w-sm h-[500px] transition hover:scale-[1.02]">
     <h3 className="text-xl font-semibold text-purple-800 mb-1">
       {upload.title}
     </h3>
@@ -53,7 +53,7 @@ const UploadCard = ({ upload }) => (
         title={upload.title}
       />
     ) : upload.type === "image" ? (
-      <img src={upload.url} alt={upload.title} className="w-full rounded-lg" />
+      <img src={upload.url} alt={upload.title} className="w-full object-cover h-96 rounded-lg" />
     ) : (
       <a
         href={upload.url}

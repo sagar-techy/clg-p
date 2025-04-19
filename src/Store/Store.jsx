@@ -1,21 +1,34 @@
-import { createStore } from 'redux';
+// Store.jsx
+import { createStore } from "redux";
 
 // Initial state
 const initialState = {
-  user: null,
+  isAuthenticated: JSON.parse(localStorage.getItem("isAuthenticated")) || false,
+  email: localStorage.getItem("userEmail") || null,
 };
 
-// Reducer function
-const reducer = (state = initialState, action) => {
- switch (action.type) {
-  case 'LOGIN':
-   return { ...state, user: action.payload };
-  case 'LOGOUT':
-   return { ...state, user: null };
-  default:
-   return state;
- }
-};
+// Reducer
+function rootReducer(state = initialState, action) {
+  switch (action.type) {
+    case "LOGIN":
+      localStorage.setItem("isAuthenticated", JSON.stringify(true));
+      localStorage.setItem("userEmail", action.payload.email);
+      return { ...state, isAuthenticated: true, email: action.payload.email };
 
-// Create Redux store
-export const store = createStore(reducer);
+    case "LOGOUT":
+      localStorage.clear();
+      return { ...state, isAuthenticated: false, email: null };
+
+    default:
+      return state;
+  }
+}
+
+// Create store
+const store = createStore(
+  rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+// ✅ default export
+export default store;

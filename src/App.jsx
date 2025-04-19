@@ -1,14 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
-import Upload from "./components/Upload";
+import Upload from "./Components/Upload";
 import Dashboard from "./Components/Dashboard";
 import Forums from "./Components/Fourms";
 import Login from "./Components/Login";
 import Activity from "./Components/Activity";
-import "./index.css";
 import Performance from "./Components/Performance";
 import Indi from "./Components/Indi";
 import Comp from "./Components/Comp";
@@ -16,13 +15,17 @@ import Career from "./Components/Career";
 import Game from "./Components/Game";
 import StudentDetails from "./Components/StudentDetails";
 import Comm from "./Components/Comm";
-
-
+import Colleges from "./Components/Colleges";
+import CollegeDetail from "./Components/CollegeDetail";
+import "./index.css";
 
 const App = () => {
+  const location = useLocation();
+  const showHeader = !["/login", "/signup"].includes(location.pathname);
+
   return (
-    <Router>
-      <Header />
+    <>
+      {showHeader && <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/upload" element={<Upload />} />
@@ -37,9 +40,12 @@ const App = () => {
         <Route path="/game" element={<Game />} />
         <Route path="/comm" element={<Comm />} />
         <Route path="/student/:id" element={<StudentDetails />} />
+        <Route path="/colleges" element={<Colleges />} />
+        <Route path="/college/:id" element={<CollegeDetail/>} />
+        
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
 

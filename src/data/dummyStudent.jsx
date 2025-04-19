@@ -1,0 +1,27 @@
+const dummyStudents = [
+  { id: 1, name: "Aarav Mehta" },
+  { id: 2, name: "Anya Sharma" },
+  { id: 3, name: "Rohan Das" },
+  { id: 4, name: "Isha Verma" },
+  { id: 5, name: "Kabir Reddy" },
+  { id: 6, name: "Meera Iyer" },
+  { id: 7, name: "Rajat Kapoor" },
+  { id: 8, name: "Priya Nair" },
+  { id: 9, name: "Tanmay Mishra" },
+  { id: 10, name: "Divya Rao" },
+  { id: 11, name: "Ayaan Singh" },
+  { id: 12, name: "Riya Sen" },
+  { id: 13, name: "Siddharth Joshi" },
+  { id: 14, name: "Neha Kulkarni" },
+  { id: 15, name: "Manav Bhatia" },
+  { id: 16, name: "Tanya Desai" },
+  { id: 17, name: "Kunal Saxena" },
+  { id: 18, name: "Sneha Bhattacharya" },
+  { id: 19, name: "Harsh Gupta" },
+  { id: 20, name: "Pooja Chatterjee" },
+  { id: 21, name: "Vikram Menon" },
+  { id: 22, name: "Ishita Ghosh" },
+  { id: 23, name: "Nikhil Tripathi" },
+];
+
+export default dummyStudents;

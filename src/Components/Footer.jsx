@@ -55,8 +55,8 @@ const Footer = () => {
            <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
            <div className="flex space-x-4 ml-5">
              <a
-               href="#"
-               className=" hover:text-gray-300 transition duration-300"
+               href="https://www.facebook.com/"
+               className=" hover:text-blue-700 transition duration-300"
              >
                <span className="sr-only">Facebook</span>
                <svg
@@ -73,8 +73,8 @@ const Footer = () => {
                </svg>
              </a>
              <a
-               href="#"
-               className=" hover:text-gray-300 transition duration-300"
+               href="https://x.com/?lang=en"
+               className=" hover:text-blue-400 transition duration-300"
              >
                <span className="sr-only">Twitter</span>
                <svg
@@ -87,8 +87,8 @@ const Footer = () => {
                </svg>
              </a>
              <a
-               href="#"
-               className=" hover:text-gray-300 transition duration-300"
+               href="https://www.instagram.com/"
+               className=" hover:text-pink-800 transition duration-300"
              >
                <span className="sr-only">Instagram</span>
                <svg

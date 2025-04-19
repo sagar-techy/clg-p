@@ -42,7 +42,7 @@ const Footer = () => {
            </div>
          </div>
        </div>
-       <div className="border-t border-blue-400 mt-8 pt-6 text-center">
+       <div className="border-t border-black mt-8 pt-6 text-center">
          <p className="">&copy; 2025 Campus Connect. All Rights Reserved.</p>
        </div>
      </div>

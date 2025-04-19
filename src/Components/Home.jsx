@@ -118,7 +118,7 @@ const Home = () => {
               Community Engagement
             </Link>
             <Link className="bg-white text-[#AF8F6F] p-4 border-[1.5px] border-[#b19ea0] rounded-lg hover:shadow-xl  hover:bg-[#ebc49e] hover:text-white hover:font-bold transition duration-200">
-              Personalized Recommendations
+              Upload Activity
             </Link>
           </ul>
         </section>
